@@ -218,3 +218,105 @@ button :hover{
     color: rgb(112, 168, 168);
 }
 
+/* MOBILE RESPONSIVE DESIGN */
+@media(max-width : 768px){
+    /* Top Nav */
+    .nav-top{
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    /* Middle Nav */
+    .nav-mid{
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+    }
+    /* Logo */
+    .navLogo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* Search Box */
+    .search-box{
+        width: 100%;
+    }
+    .search-input{
+        width: 100%;
+    }
+    /* Language & Login */
+    .nav-Lang,
+    .signup{
+        width: 100%;
+        text-align: center;
+    }
+    /* Bottom Nav */
+    .nav-buttom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    .nav-buttom a{
+        font-size: 14px;
+    }
+    /* Hero Section */
+    .hero-section{
+        height: 220px;
+        background-size: cover;
+        background-position: center;
+    }
+    /* Benefits Section */
+    .adv{
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+    .adv div{
+        width: 48%;
+        font-size: 13px;
+
+    }
+    /* Products section */
+    .shop-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        padding: 10px;
+    }
+    .box{
+        width: 100%;
+    }
+    .box-img{
+        height: 180px;
+    }
+    /* Heading */
+    h2{
+        font-size: 18px;
+    }
+    /* Small Mobile */
+@media (max-width:480px){
+
+.shop-section{
+    grid-template-columns: 1fr;
+}
+
+.adv div{
+    width: 100%;
+}
+
+.nav-buttom a{
+    width: 100%;
+    text-align: center;
+}
+
+.hero-section{
+    height: 180px;
+}
+
+}    
+}

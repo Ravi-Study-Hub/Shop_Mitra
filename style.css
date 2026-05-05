@@ -68,7 +68,7 @@
 
 }
 .search-input{
-    width: 250px;
+    width: 350px;
     background-color: #f8f8f8;
     font-size: 1rem;
     border: none;
@@ -218,3 +218,22 @@ button :hover{
     color: rgb(112, 168, 168);
 }
 
+/* MOBILE RESPONSIVE */
+@media(max-width: 768px){
+    *{
+        box-sizing: border-box;
+    }
+    .search-box{
+        width: 100%;
+        display: flex;
+    }
+    .search-select{
+        width: 25%;
+    }
+    .search-input{
+        width: 60%;
+    }
+    .search-box button{
+        width: 15%;
+    }
+}

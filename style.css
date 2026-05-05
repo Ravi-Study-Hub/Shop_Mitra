@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    font-family: Arial;
+
+}
+/* Nav-top */
+.nav-top{
+    height: 30px;
+    background-color: rgb(20, 20, 190);
+    color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.nav-top p :hover{
+    color: red;
+}
+/* navbar- mid */
+.nav-mid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    background-color: #cccccc;
+    color: #0f1111;
+
+}
+.navLogo{
+    height: 100px;
+    width: 150px;
+}
+
+.logo{
+    background-image: url(ShopMitra\ logo.png); 
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+    
+    
+}
+.border{
+    border: 2px solid transparent;
+}
+.border :hover{
+    border: 2px solid red;
+}
+
+.first-add{
+    margin-left: 20px;
+    color: #0f1111;
+    font-size: 0.85rem;
+}
+
+.search-box{
+    height: 50px;
+    width: 600px;
+    display: flex;
+}
+.search-select{
+    width: 50px;
+    background-color: #f8f8f8;
+    color: #0f1111;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+     border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.search-input{
+    width: 500px;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    border: none;
+}
+button{
+    background-color: orange;
+    color: #0f1111;
+    width: 50px;
+    border: none;
+    font-size: 1.5rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+button :hover{
+    color: red;
+}
+.nav-Lang{
+    height: 30px;
+    width: 80px;
+    background-color: beige;
+}
+.signup{
+    padding-left: 100px;
+    
+}
+.signup a {
+    text-decoration: none;
+    color: black;
+    
+}
+.signup a :hover{
+    color: blue;
+}
+/* navbar-buttom */
+.nav-buttom{
+    height: 50px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-buttom a{
+    color: black;
+    text-decoration: none;
+}
+.nav-buttom a :hover{
+    color: orange;
+}
+
+/* Main Body */
+/* hero-section */
+.hero-section{
+    background-image: url(hero_image.jpg);
+    height: 400px;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+
+
+/* Main Advantage */
+
+.adv{
+    /* margin-top: 10px; */
+    height: 50px;
+    width: 100%;
+    background-color: rgb(246, 241, 236);
+    border: 1px solid bisque;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.first-free{
+    font-size: 1rem;
+}
+.Second-free{
+    font-size: 0.8rem;
+    margin-left: 22px;
+    color: #565656;
+}
+.first-return{
+    font-size: 1rem;
+}
+.second-return{
+    font-size: 0.8rem;
+    margin-left: 26px;
+    color: #565656;
+}
+.first-cod{
+    font-size: 1rem;
+}
+.second-cod{
+    font-size: 0.8rem;
+    margin-left: 26px;
+    color: #565656;
+}
+.first-payment{
+    font-size: 1rem;
+}
+.second-payment{
+    font-size: 0.8rem;
+    margin-left: 26px;
+    color: #565656;
+}
+.first-support{
+    font-size: 1rem;
+}
+.second-support{
+    font-size: 0.8rem;
+    margin-left: 26px;
+    color: #565656;
+}
+/** Products **/
+/* Shop-section */
+.shop-section{
+    /* margin-top: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box{
+    /* border: 2px solid #0f1111; */
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 15px 0px;
+}
+.box-content p{
+    color: rgb(112, 168, 168);
+}
+

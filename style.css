@@ -218,22 +218,126 @@ button :hover{
     color: rgb(112, 168, 168);
 }
 
-/* MOBILE RESPONSIVE */
+
+/* Footer */
+.site-footer{
+    background-color: #0f1111;
+    color: #f2f2f2;
+    padding: 40px 20px 20px;
+}
+.footer-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.footer-col{
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+.footer-col h3,
+.footer-col h4{
+    margin-bottom: 10px;
+}
+.footer-col p{
+    color: #d1d1d1;
+    line-height: 1.5;
+}
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-col ul li{
+    margin: 6px 0;
+}
+.footer-col a{
+    color: #f2f2f2;
+    text-decoration: none;
+}
+.footer-col a:hover{
+    color: orange;
+}
+.social-icons a{
+    display: inline-block;
+    margin-right: 8px;
+    color: #f2f2f2;
+    font-size: 1.1rem;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 20px;
+    color: #bdbdbd;
+}
+
 @media(max-width: 768px){
-    *{
-        box-sizing: border-box;
+    .footer-container{
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 10px;
     }
-    .search-box{
-        width: 100%;
-        display: flex;
+    .footer-col{
+        min-width: 0;
     }
-    .search-select{
-        width: 25%;
-    }
-    .search-input{
-        width: 60%;
-    }
-    .search-box button{
-        width: 15%;
-    }
+}
+
+/* Additional responsive rules for header, search, products */
+@media (max-width: 1024px) {
+    * { box-sizing: border-box; }
+    .search-box { width: 100%; max-width: 700px; }
+    .box { width: 48%; }
+}
+
+@media (max-width: 768px) {
+    * { box-sizing: border-box; }
+
+    /* Header: stack logo, search and actions */
+    .nav-mid{ flex-direction: column; align-items: stretch; height: auto; padding:12px 16px; gap:12px; }
+    .navLogo{ width:120px; height:80px; margin:0 auto; }
+    .logo{ height:80px; background-size:contain; background-position:center; }
+    .signup{ padding-left:0; text-align:center; }
+
+    /* Make search fully responsive */
+    .search-box{ width:100%; display:flex; }
+    .search-select{ width:18%; min-width:64px; }
+    .search-input{ width: calc(100% - 140px); flex:1; }
+    .search-box button{ width:56px; }
+
+    /* Navbar bottom: allow wrapping */
+    .nav-buttom{ flex-wrap: wrap; gap:8px; padding:8px; justify-content:center; }
+    .nav-buttom a{ padding:6px 8px; }
+
+    /* Hero & advantages */
+    .hero-section{ height:220px; }
+    .adv{ flex-direction: column; height:auto; padding:10px 8px; gap:8px; }
+
+    /* Products: two columns */
+    .shop-section{ padding:10px; }
+    .box{ width:48%; margin-top:12px; }
+    .box-img{ height:200px; }
+
+    /* Footer adjustments */
+    .footer-container{ padding:0 12px; }
+}
+
+@media (max-width: 480px) {
+    /* Small phones: single column layout */
+    .nav-mid{ padding:10px; }
+    .navLogo{ width:100px; height:64px; }
+    .logo{ height:64px; }
+
+    .search-select{ width:22%; }
+    .search-input{ width: calc(100% - 120px); }
+    .search-box button{ width:44px; }
+
+    .box{ width:100%; }
+    .box-img{ height:180px; }
+
+    .hero-section{ height:160px; }
+
+    .footer-container{ flex-direction: column; gap:12px; }
+    .footer-bottom{ padding-top:12px; }
 }

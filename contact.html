@@ -4,9 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <title>Contact Us - ShopMitra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-buttom">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-main" style="padding:30px 20px; max-width:900px; margin:0 auto;">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, please fill out the form below and we'll get back to you within 1 business day.</p>
+
+        <form class="contact-form" action="#" method="post" style="margin-top:20px; display:flex; flex-direction:column; gap:12px;">
+            <label>
+                Name
+                <input type="text" name="name" required style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" required style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;">
+            </label>
+            <label>
+                Message
+                <textarea name="message" rows="6" required style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;"></textarea>
+            </label>
+            <div>
+                <button type="submit" style="background:orange; padding:10px 18px; border-radius:6px; border:none; cursor:pointer;">Send Message</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col about">
+                <h3>ShopMitra</h3>
+                <p>Trusted online store for everyday needs.</p>
+            </div>
+            <div class="footer-col links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">My Cart</a></li>
+                    <li><a href="#">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <p>Email: support@shopmitra.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+            <div class="footer-col social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ShopMitra. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

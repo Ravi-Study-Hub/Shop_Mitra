@@ -67,6 +67,8 @@
                 <a href="contact.html"> <i class="fa-solid fa-phone-volume"></i> Contact Us</a>
         </div> <hr>
     </header>
+    <!-- Mobile menu toggle -->
+    <button class="menu-toggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
     <!-- Main Body -->
     <div class="hero-section">  </div>
 
@@ -219,5 +221,15 @@
             <p>© 2026 ShopMitra. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Toggle mobile nav
+        document.addEventListener('DOMContentLoaded', function(){
+            var btn = document.querySelector('.menu-toggle');
+            var nav = document.querySelector('.nav-buttom');
+            if(btn && nav){
+                btn.addEventListener('click', function(){ nav.classList.toggle('open'); });
+            }
+        });
+    </script>
 </body>
 </html>
